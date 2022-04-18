@@ -17,6 +17,7 @@ function App() {
   return (
      
       <Layout style={{ minHeight: '100vh' }}>
+          
         <Sider collapsible collapsed={collapsed} onCollapse={() => setcollapsed(!collapsed)}>
           <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
@@ -41,7 +42,7 @@ function App() {
           </Menu>
         </Sider>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }} />
+       
           <Content style={{ margin: '0 16px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
               <Breadcrumb.Item>User</Breadcrumb.Item>
